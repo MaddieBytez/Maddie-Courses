@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maddie’s Course Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #007a99, #00ccff);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 1200px;
+      width: 100%;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      color: black;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+    .card a {
+      display: inline-block;
+      background: #00ccff;
+      color: black;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    .card a:hover {
+      background: #007a99;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Maddie’s Course Hub</h1>
+    <div class="grid">
+      
+      <!-- Example Course Card -->
+      <div class="card">
+        <img src="https://via.placeholder.com/200x250.png?text=ACCT207+Book" alt="ACCT207 Book">
+        <a href="https://maddiebytez.github.io/Maddie-Acct207/">ACCT207: Fundamentals of Accounting</a>
+      </div>
+
+      <!-- Add more courses by duplicating this block -->
+      <div class="card">
+        <img src="https://via.placeholder.com/200x250.png?text=MATH221+Book" alt="MATH221 Book">
+        <a href="#">MATH221: Statistics</a>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/200x250.png?text=ENG122+Book" alt="ENG122 Book">
+        <a href="#">ENG122: English Composition</a>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
