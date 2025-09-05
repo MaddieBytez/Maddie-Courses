@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,11 +21,17 @@
       max-width: 1200px;
       width: 100%;
     }
-    h1 {
+    .header {
+      grid-column: 1 / -1;
+      background: #003366;
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
       text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 40px;
+      font-size: 2rem;
       font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      margin-bottom: 40px;
     }
     .grid {
       display: grid;
@@ -62,23 +69,23 @@
 </head>
 <body>
   <div class="container">
-    <h1>📚 Maddie’s Course Hub</h1>
+    <div class="header">📚 Maddie’s Course Hub</div>
     <div class="grid">
       
       <!-- Example Course Card -->
       <div class="card">
-        <img src="https://via.placeholder.com/200x250.png?text=ACCT207+Book" alt="ACCT207 Book">
+        <img src="images/acct207.jpg" alt="ACCT207 Book">
         <a href="https://maddiebytez.github.io/Maddie-Acct207/">ACCT207: Fundamentals of Accounting</a>
       </div>
 
       <!-- Add more courses by duplicating this block -->
       <div class="card">
-        <img src="https://via.placeholder.com/200x250.png?text=MATH221+Book" alt="MATH221 Book">
+        <img src="images/math221.jpg" alt="MATH221 Book">
         <a href="#">MATH221: Statistics</a>
       </div>
 
       <div class="card">
-        <img src="https://via.placeholder.com/200x250.png?text=ENG122+Book" alt="ENG122 Book">
+        <img src="images/eng122.jpg" alt="ENG122 Book">
         <a href="#">ENG122: English Composition</a>
       </div>
 
